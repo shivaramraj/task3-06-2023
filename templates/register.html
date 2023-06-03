@@ -1,0 +1,17 @@
+{% extends 'false.html' %}
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+
+
+{% block content %}
+<center>
+    <h1>Register User </h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{UFO.as_p}}
+        <input type="submit" value="Register">
+    </form>
+</center>
+{% endblock %}

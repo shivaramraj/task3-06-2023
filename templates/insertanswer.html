@@ -1,0 +1,20 @@
+
+{% extends 'false.html' %}
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+
+
+{% block content %}
+    <center>
+        <br>
+        <h1>Enter your answer heare </h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="answer">Enter answer</label>
+            <input type="text" name="answer" id="answer">
+            <input type="submit" value="Post">
+        </form>
+        
+    </center>
+{% endblock %}
